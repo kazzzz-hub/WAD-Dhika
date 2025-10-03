@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CV — Andhika Zacky Pradhana Hudaya</title>
+  <style>
+    :root{
+      --bg:#f9fafc;
+      --card:#ffffff;
+      --accent1:#3b82f6; /* biru modern */
+      --accent2:#9333ea; /* ungu */
+      --accent3:#f43f5e; /* merah muda */
+      --muted:#6b7280;
+      --radius:18px;
+      --gap:22px;
+    }
+    *{box-sizing:border-box; margin:0; padding:0}
+    body{
+      font-family: 'Poppins', ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto;
+      background:linear-gradient(135deg,var(--accent1) 0%,var(--accent2) 100%);
+      min-height:100vh; display:flex; align-items:center; justify-content:center; padding:30px;
+    }
+
+    .cv-container{
+      max-width:1000px; width:100%; background:var(--card); border-radius:var(--radius);
+      box-shadow:0 12px 30px rgba(0,0,0,0.12);
+      overflow:hidden; display:grid; grid-template-columns: 320px 1fr;
+    }
+
+    /* Sidebar */
+    .sidebar{
+      background:linear-gradient(180deg,var(--accent1),var(--accent2));
+      color:white; padding:28px; display:flex; flex-direction:column; align-items:center; text-align:center;
+    }
+    .photo{
+      width:140px; height:140px; border-radius:50%; overflow:hidden;
+      margin-bottom:20px; box-shadow:0 0 0 6px rgba(255,255,255,0.3);
+    }
+    .photo img{
+      width:100%; height:100%; object-fit:cover;
+    }
+
+    .name{font-size:22px; font-weight:700}
+    .title{font-size:14px; opacity:0.85; margin-bottom:20px}
+
+    .contact{margin-top:20px; font-size:14px; width:100%; text-align:left}
+    .contact div{margin-bottom:10px; display:flex; gap:8px; align-items:center}
+    .contact strong{min-width:65px}
+
+    .skills{margin-top:20px; display:flex; flex-wrap:wrap; gap:10px; justify-content:center}
+    .skill{background:rgba(255,255,255,0.15); padding:6px 12px; border-radius:999px; font-size:13px}
+
+    /* Main */
+    .main{padding:30px}
+    .section{margin-bottom:26px}
+    .section h3{font-size:16px; font-weight:700; color:var(--accent1); border-left:4px solid var(--accent1); padding-left:8px; margin-bottom:12px}
+
+    .summary{color:var(--muted); font-size:14px; line-height:1.6; margin-bottom:20px}
+
+    .item{margin-bottom:16px; padding:14px 16px; border-radius:12px; background:#f9fafb; border:1px solid #e5e7eb}
+    .item h4{margin:0; font-size:15px; font-weight:600}
+    .item .meta{font-size:13px; color:var(--muted); margin-top:4px}
+    .item p{margin-top:6px; font-size:14px; color:#374151; line-height:1.5}
+
+    @media (max-width:860px){
+      .cv-container{grid-template-columns:1fr}
+      .sidebar{align-items:flex-start; text-align:left}
+    }
+
+    @media print{
+      body{background:white; padding:0}
+      .cv-container{box-shadow:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="cv-container">
+    <aside class="sidebar">
+      <div class="photo">
+        <img src="image/Andhika.png" alt="Foto Andhika">
+      </div>
+      <div class="name">Andhika Zacky Pradhana Hudaya</div>
+
+      <div class="contact">
+        <div><strong>Email:</strong> andhikazackyph@email.com</div>
+        <div><strong>Telepon:</strong> +62 8112 7315 0213</div>
+        <div><strong>Lokasi:</strong> Palembang, Indonesia</div>
+        <div><strong>LinkedIn:</strong> linkedin.com/in/andhika-zacky-ph</div>
+      </div>
+
+      <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">C#</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Communication</div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="section">
+        <h3>Ringkasan</h3>
+        <div class="summary">
+          Saya adalah Mahasiswa Sistem Informasi Telkom University yang aktif dalam Komunitas dan memiliki skill komunikasi yang bagus. Saya juga siap dalam mencoba banyak hal baru.
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Pengalaman</h3>
+        <div class="item">
+          <h4>Koalisi — Event</h4>
+          <div class="meta">Juli 2025 – Sekarang • Bandung</div>
+          <p>Masuk dalam Divisi Event, Saya dipercaya untuk memegang 2 Program Kerja yaitu sebagai Penanggungjawab Program Kerja KOALINFO dan CFC.</p>
+        </div>
+        <div class="item">
+          <h4>Tifosi — Equipper</h4>
+          <div class="meta">Juli 2025 – Sekarang • Bandung</div>
+          <p>Masuk dalam Divisi Equipper, Saya dipercaya sebagai Penanggungjawab dari pengadaan barang yang akan digunakan oleh Tifosi.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Pendidikan</h3>
+        <div class="item">
+          <h4>S1 — Telkom University</h4>
+          <div class="meta">Sistem Informasi • 2024 – Sekarang</div>
+          <p>Meraih IPK 3.72/4.00. Aktif dalam Komunitas Himpunan Prodi dan juga sedang dalam masa Kaderisasi</p>
+        </div>
+        <div class="item">
+          <h4>SMA — SMA Negeri 1 Kayuagung</h4>
+          <div class="meta">Jurusan IPA • 2020 – 2023</div>
+          <p>Lulus sebagai TOP 10 Lulusan Terbaik dengan Predikat Eligible</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Bahasa</h3>
+        <div class="item">
+          <p>Indonesia (Professional), English (Native)</p>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
